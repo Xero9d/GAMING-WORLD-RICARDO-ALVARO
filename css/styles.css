@@ -64,6 +64,11 @@ nav ul li a {
     justify-content: center;
    
 }
+.textarticles{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
 .arcanephoto {
     max-width: 40%;
     padding-left: 5%;
@@ -111,4 +116,11 @@ footer {
     text-align: center;
     padding: 1rem;
     background-color: #111;
+    display: flex;
+    justify-content: space-around;
 }
+ .logofooter{
+    max-width: 10%;
+
+    height: auto;
+ }
