@@ -8,11 +8,27 @@ body {
 }
 
 /* NavBar */
+nav {
+    background-color: #144bff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    width: 100%; 
+    justify-content: center;
+}
+
 nav ul li {
     display: inline;
     padding: 8px;
     display: block;
     justify-content: left;
+    font-size: 1.6rem;
 }
 
 nav ul li:hover {
@@ -23,13 +39,15 @@ nav ul li:hover {
 /* Header */
 header {
     background-color: #144bff;
-    padding: 0.5rem 0;
-    text-align: center;
-    position: fixed;  /* Fija el navbar en la parte superior */
-    top: 0;           /* Ubica el navbar en la parte superior */
-    left: 0;          /* Alinea al borde izquierdo de la pantalla */
-    z-index: 1000;    /* Asegura que esté encima de otros elementos */
-    width: 100%;      /* Asegura que ocupe el ancho completo */
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header ul {
@@ -49,9 +67,8 @@ header ul li a {
 }
 
 /* Hero Section */
-.hero {
-    text-align: center;
-    position: relative;
+.hero-banner{
+    margin-top: 40px;
 }
 
 .hero-banner img {
