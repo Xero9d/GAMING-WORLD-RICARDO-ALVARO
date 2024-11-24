@@ -1,83 +1,100 @@
-/* styles.css */
+/* General */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: black;
     color: white;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #144bff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
 
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #000;
-    box-sizing: border-box;
-}
-
-header .logo {
-    font-family: 'Anton', sans-serif;
-    font-size: 2rem;
-    color: white;
-}
-
-nav {
-    background-color: #144bff;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; /* Ajusta distribución de los elementos */
-    padding: 1rem 0;
-    box-sizing: border-box;
-    }
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-nav ul li a {
+header ul li a {
     color: white;
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 2rem;
+    position: relative;
 }
 
-.hero img {
-    max-width: 100%;
-    height: auto;
+.hero-banner img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto;
+    max-height: 100vh;
 }
 
-.highlights {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-}
-
-.highlight {
+.hero-text {
     text-align: center;
+    padding: 1rem 0; 
+    background-color: black; 
+    color: white; 
+    margin: 0;
 }
 
-.gallery {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
+.hero-text h1 { /* Texto de La Revista del Año en Videojuegos */
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    margin: 0.5rem 0;
 }
 
-.form {
+.hero-text p { /* Estrellitas */
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+
+/* Descubre Section */
+.descubre {
     text-align: center;
-    padding: 2rem;
-    background-color: #333;
+    background-color: black;
+    padding: 3rem 1rem;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #111;
+.descubre h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
 }
+
+.imagen-vr img {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* Tipografías */
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
