@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+}
+
+header .logo {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.highlight {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.form {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+}
