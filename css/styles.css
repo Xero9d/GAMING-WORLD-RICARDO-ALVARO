@@ -70,6 +70,42 @@ header ul li a {
 .hero-banner{
     margin-top: 40px;
 }
+.articlestitle{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.textarticles{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.arcanephoto {
+    max-width: 40%;
+    padding-left: 5%;
+    height: auto;
+}
+.spacephoto {
+    max-width: 40%;
+    padding-left: 5%;
+    height: auto;
+}
+.spacediv{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.arcanediv{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem; 
+}
 
 .hero-banner img {
     width: 100%; 
@@ -100,6 +136,27 @@ header ul li a {
     letter-spacing: 1rem;
 }
 
+.teambuilding{
+    text-align: center;
+    padding: 5rem;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+}
+ .logofooter{
+    max-width: 10%;
+    height: auto;
+ }
+
 /* Descubre Section */
 
 .imagen-vr img {
@@ -115,5 +172,3 @@ header ul li a {
     font-weight: 100;
     font-style: normal;
   }
-
-  
