@@ -53,6 +53,37 @@ nav ul li a {
     max-width: 100%;
     height: auto;
 }
+.articlestitle{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.arcanephoto {
+    max-width: 40%;
+    padding-left: 5%;
+    height: auto;
+}
+.spacephoto {
+    max-width: 40%;
+    padding-left: 5%;
+    height: auto;
+}
+.spacediv{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.arcanediv{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem; 
+}
 
 .highlights {
     display: flex;
