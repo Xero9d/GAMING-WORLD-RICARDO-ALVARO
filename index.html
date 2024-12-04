@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="#inicio" class="lato-thin" id="gamingworld">GAMING WORLD</a></li>
-                <li><a href="#" class="lato-thin" id="contacto">CONTACTO</a></li>
+                <li><a href="#contactForm" class="lato-thin" id="contacto">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -34,20 +34,6 @@
     <div class="imagen-vr">
         <img src="/images/descubre.png" alt="Realidad virtual">
     </div>
-
-
-    <section class="highlights">
-        <div class="highlight">
-            <div class="image-placeholder"></div>
-            <h2>Título</h2>
-            <p>Texto descriptivo</p>
-        </div>
-        <div class="highlight">
-            <div class="image-placeholder"></div>
-            <h2>Título</h2>
-            <p>Texto descriptivo</p>
-        </div>
-    </section>
 
     <section class="articles">
         <h3 class="articlestitle">Nuestra Selección Principal</h3>
@@ -87,7 +73,24 @@
         </div>
     </section>
 
+    <!-- Los "required" verifican que el usuario esté obligado a rellenar esos apartados para enviar el formulario correctamente. type = "text" para que el formulario sepa que la respuesta esperada es un texto, type = "email" para correos, de esta forma pedirá un @ en el mensaje y el textarea para tener una zona para escribir mensajes más largos, que se puede alargar con el propio ratón. -->
 
+    <section id="contacto" class="contact-form">
+        <div class="contact-container">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" rows="4" required></textarea>
+    
+                <button type="submit" id="submitBtn">Enviar</button> 
+            </form>
+        </div>
+    </section>
 </body>
 
 
@@ -96,4 +99,6 @@
     <img class="logofooter" src="images\logo.png" alt="logo">
 </footer>
 
+<!-- SCRIPTS  -->
+<script src="/js/scripts.js"></script> 
 </html>
