@@ -226,6 +226,95 @@ button:hover {
     background-color: #123abd;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 720px; /* Establece un ancho máximo para el carrusel */
+    width: 100%; /* Hace que el carrusel ocupe el ancho completo del contenedor */
+    position: relative; /* Necesario para posicionar elementos como botones */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    overflow: hidden; /* Asegura que las imágenes que salgan del contenedor no se muestren */
+}
+
+/* Asegura que las imágenes dentro del carrusel se adapten correctamente */
+.slideshow-container img {
+    width: 100%; /* Escala las imágenes al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    display: block; /* Evita que las imágenes tengan espacios extra por default */
+    margin: 0 auto; /* Centra las imágenes dentro del contenedor */
+}
+
+/* Asegura que las flechas de navegación estén centradas y dentro del carrusel */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Centra verticalmente las flechas */
+    transform: translateY(-50%); /* Asegura un centrado preciso */
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Ajuste de la posición de las flechas */
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Dot indicators centrados */
+.dot-container {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px; /* Espaciado entre los indicadores */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Título del SlideShow*/
+
+.slideShowTitle {
+    display: flex; /* Activa el modelo flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 0; /* Elimina márgenes adicionales del h1 */
+    text-align: center; /* Asegura que el texto esté centrado */
+    font-size: 3rem; /* Ajusta el tamaño del texto si es necesario */
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Tipografías */
 .lato-thin {
     font-family: "Lato", sans-serif;
