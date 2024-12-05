@@ -74,6 +74,7 @@ header ul li a {
     display: flex;
     justify-content: center;
     padding: 2rem;
+    font-size: 2rem;
 }
 .articles{
     display: flex;
@@ -231,3 +232,19 @@ button:hover {
     font-weight: 100;
     font-style: normal;
   }
+
+
+/* Mapa Google */
+.googlemap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.maptitle{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 2rem;
+}
