@@ -237,7 +237,6 @@ button:hover {
 /* Mapa Google */
 .googlemap{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 50px;
 }
