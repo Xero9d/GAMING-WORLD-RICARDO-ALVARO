@@ -29,3 +29,32 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     // Mostrar el mensaje en un pop-up
     alert(thankYouMessage);
 });
+
+// Cambiar el texto de los placeholders en pantallas de máximo 600px de ancho
+
+function updatePlaceholders() {
+
+    // Seleccionamos los elementos del formulario
+
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const messageTextarea = document.getElementById("message");
+
+    if (window.innerWidth < 600) {
+
+        // Cambiamos los placeholders para pantallas pequeñas
+
+        nameInput.placeholder = "Nombre";
+        emailInput.placeholder = "Email";
+        messageTextarea.placeholder = "Mensaje corto";
+    } else {
+        // Restaurar los placeholders para pantallas más grandes
+        nameInput.placeholder = "Tu nombre completo";
+        emailInput.placeholder = "Tu correo electrónico";
+        messageTextarea.placeholder = "Escribe tu mensaje aquí";
+    }
+}
+
+// Detecta cambios en el tamaño de la ventana y ejecuta la función
+window.addEventListener("resize", updatePlaceholders);
+updatePlaceholders();
